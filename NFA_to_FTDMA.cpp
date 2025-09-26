@@ -26,17 +26,6 @@ struct State {
         this->transitionB.second = empty;
 
     }
-    State(std::vector<State*>& vec1, std::vector<State*>& vec2) {
-        this->transitionA.first = 'a';
-        this->transitionB.first = 'b';
-        ID = Id++;
-        for (int i = 0;i < vec1.size();i++) {
-            transitionA.second.push_back(vec1[i]);
-        }
-        for (int i = 0;i < vec2.size();i++) {
-            transitionB.second.push_back(vec2[i]);;
-        }
-    }
     bool isThere(std::vector<State*>& vec, State*& newState) {
         for (int i = 0;i < vec.size();i++) {
             if (vec[i] == newState) {
@@ -45,7 +34,6 @@ struct State {
         }
         return 0;
     }
-
     void addHelper(std::vector<State*>& vec, State*& newState)
     {
         if (isThere(vec, newState)) {
@@ -53,6 +41,20 @@ struct State {
         }
         vec.push_back(newState);
     }
+    State(std::vector<State*>& vec1, std::vector<State*>& vec2) {
+        this->transitionA.first = 'a';
+        this->transitionB.first = 'b';
+        ID = Id++;
+        for (int i = 0;i < vec1.size();i++) {
+
+            addHelper(transitionA.second, vec1[i]);
+        }
+        for (int i = 0;i < vec2.size();i++) {
+            addHelper(transitionB.second, vec2[i]);
+        }
+    }
+   
+    
 
     void addTransition(char el, State*& newState) {
         if (el != 'a' && el != 'b') {
@@ -77,8 +79,8 @@ struct State {
 
             std::cout << this->transitionB.second[i]->ID << " ";
         }
-        std::cout<<'\n'<<"isFinal - "<< this->isFinal;
-     
+        std::cout<<'\n'<<"isFinal - "<< this->isFinal<<'\n';
+        if (this->isStart) std::cout << "Start state" << '\n';
         std::cout << '\n';
     }
 
@@ -99,7 +101,7 @@ void swapStates(State*& one, State*& two) {
     two = help;
 }
 void sortStates(std::vector<State*>& states) {
-  //  std::vector<State*> newStates;
+  
     for (int i = 0;i < states.size() - 1;i++) {
         int minidx = i;
         for (int j = i + 1;j < states.size();j++) {
@@ -122,8 +124,17 @@ bool isThere(std::vector<State*>& vec, State* ptr) {
     }
     return 0;
 }
-//TOTALIZATION
+
 void Totalization(std::vector<State*>& states, State& emptySet) {
+    bool startExist = false;
+    for (int i = 0;i < states.size();i++) {
+        if (states[i]->isStart) {
+            startExist = true;
+        }
+    }
+    if (!startExist) {
+        throw std::logic_error("Automat without start state is invalid!");
+    }
     bool flag = false;
     for (int i = 0;i < states.size();i++) {
         if (states[i]->transitionA.second.empty()) {
@@ -143,7 +154,7 @@ void Totalization(std::vector<State*>& states, State& emptySet) {
         states[j]->print();
     }
 }
-//some help functions
+
 bool areTheSame(std::vector<State*> one, std::vector<State*> two) {
     if (one.size() != two.size()) {
         return 0;
@@ -202,29 +213,48 @@ bool checkIsFinalSet(std::vector<State*>& states) {
     }
     return false;
 }
-int startIdx(std::vector<State*>& states) {
+void startIdxs(std::vector<State*>& states, std::vector<int>& startIdxs) {
     for (int i = 0;i < states.size();i++) {
         if (states[i]->isStart) {
-            return i;
+            startIdxs.push_back(i);
         }
     }
-    return -1;
+ ;
 }
-//DETERMINIZATION
+
 void determinization(std::vector<State*>& states) {
 
     std::vector<std::vector<State*>> finalStates;
-    int start = startIdx(states);
-    if (start == -1) {
-        throw std::out_of_range("Out of range");
+    std::vector<int> starters;
+    startIdxs(states, starters);
+    if (starters.empty()) {
+        throw std::out_of_range("Invalid Automat");
     }
-    finalStates.push_back({ states[start] });
+    std::vector<State*> startStates;
+    for (int k = 0;k < starters.size();k++) {
+        
+        startStates.push_back(states[starters[k]]);
+       
+    }
+   
+    //Checking for circular dependency - if 1 ->a 1 and 1 ->b 1 - it will never go to another state
+    for (int k = 0;k < startStates.size();k++) {
+        
+       
+        if (startStates[k]->transitionA.second.size() == startStates[k]->transitionB.second.size() == 1 &&
+            startStates[k] == startStates[k]->transitionA.second[0] &&
+            startStates[k] == startStates[k]->transitionB.second[0]) {
+            throw std::logic_error("Circular Dependency in a state");
+        }
+    }
+
+    finalStates.push_back(startStates);
 
     std::queue<std::vector<State*>> q;
     
-    std::vector<State*> curr = { states[start] };
+    std::vector<State*> curr = startStates;
     q.push(curr);
-    bool f = false;
+   
     while (true) {
         if (q.empty()) {
             break;
@@ -239,11 +269,11 @@ void determinization(std::vector<State*>& states) {
             vectorsMerged(startB, curr[j]->transitionB.second);
         }
         
-        sortStates(startA);  
-        sortStates(startB);
+        //sortStates(startA);  
+        //sortStates(startB);
       
       
-       /* for (int i = 0;i < curr.size();i++) {
+    /*    for (int i = 0;i < curr.size();i++) {
             std::cout << curr[i]->ID << ' ';
         }
         std::cout << "->a ";
@@ -255,22 +285,23 @@ void determinization(std::vector<State*>& states) {
             std::cout << startB[i]->ID << ' ';
         }
         std::cout << '\n';*/
-        if (!SubsetIsThere(q, startA) && !SubsetIsTherePrim(finalStates, startA)) {
-            
-            
+
+        //!SubsetIsThere(q, startA) && 
+        //!SubsetIsThere(q, startB) && 
+   
+        if (!SubsetIsTherePrim(finalStates, startA)) {
+                        
             q.push(startA);
             finalStates.push_back(startA);
-           
-            
+
         }
-        if (!SubsetIsThere(q, startB) && !SubsetIsTherePrim(finalStates, startB)) {
-            
-            
+   
+      
+        if (!SubsetIsTherePrim(finalStates, startB)) {
+               
             q.push(startB);
             finalStates.push_back(startB);
-         
 
-            
         }
         q.pop();
 
@@ -291,8 +322,6 @@ void determinization(std::vector<State*>& states) {
             vectorsMerged(startB, finalStates[i][j]->transitionB.second);
         }
        
-        bool checkB = checkIsFinalSet(startB);
-
         int idxA = idx(finalStates, startA);
         int idxB = idx(finalStates, startB);
         if (idxA == -1 || idxB == -1) {
@@ -303,7 +332,7 @@ void determinization(std::vector<State*>& states) {
             finals[idxA]->isFinal = true;
         }
         if (checkIsFinalSet(startB)) {
-            finals[idxA]->isFinal = true;
+            finals[idxB]->isFinal = true;
         }
 
         finals[i]->transitionA.second.push_back(finals[idxA]);
@@ -408,23 +437,27 @@ std::vector<std::vector<int>> newClasses(std::vector<std::vector<int>>& classes,
     
     return Newclasses;
 }
+//Our HashMap will look like
+//1 -> <1, 2> so this is on idx 0
+//2 -> <2, 3> idx = 1
 bool someStateisFinal(std::vector<int> vec, std::vector<State*>& states) {
     
     for (int i = 0;i < vec.size();i++) {
+        //we substract with 1 because on ID 1 matches with idx 0 of pairs
         if (states[vec[i] - 1]->isFinal) return true;
     }
     return false;
 }
-//MINIMIZATION
 void minimization(std::vector<State*>& states) {
   
     std::vector<std::pair<int, int>> MainPairs(states.size());
+    //creating a hashMap on ecah idx there is a pair where the first component is to the ID of the state reached from a transition
+    //and the second component is from the B transition
     for (int j = 0;j < states.size();j++) {
         MainPairs[j].first = states[j]->transitionA.second[0]->ID;
         MainPairs[j].second = states[j]->transitionB.second[0]->ID;
       
     }
-
 
 
     std::vector<std::vector<int>> classes(2);
@@ -434,6 +467,8 @@ void minimization(std::vector<State*>& states) {
     }
     std::vector<std::pair<int, int>> pairsCurrentClasses(states.size());
     pairsOfClasses(classes, pairsCurrentClasses, MainPairs);
+    //returns the matching classes' numbers from the IDs 
+    //we will call this function on each iteration beacuse each time the number of classes is changing 
     classes = newClasses(classes, pairsCurrentClasses);
 
     while (true) {
@@ -442,10 +477,13 @@ void minimization(std::vector<State*>& states) {
         pairsOfClasses(classes, pairsCurrentClasses, MainPairs);
         classes = newClasses(classes, pairsCurrentClasses);
         int newSize = classes.size();
+        //when we finally have splited the classes so after the two functions there are no more classes sliced(splited)
+        //so we are done with minimization and break the cycle
         if (size == newSize) break;
     }
-    pairsOfClasses(classes, pairsCurrentClasses, MainPairs);
- /*   for (int j = 0;j < classes.size();j++) {
+    //and finally we call again this function to see the final hashMap with transitions after the final class distribution
+   // pairsOfClasses(classes, pairsCurrentClasses, MainPairs);
+  /*  for (int j = 0;j < classes.size();j++) {
         for (int i = 0;i < classes[j].size();i++) {
 
             std::cout << classes[j][i] << ' ';
@@ -460,15 +498,17 @@ void minimization(std::vector<State*>& states) {
         minimizedStates[y]->ID = y + 1;
         if (someStateisFinal(classes[y], states)) {
             minimizedStates[y]->isFinal = true;
+            //if one of the IDs matches with a final state in the new Automata this state will become final
             
         }
       
     }
     std::cout << "--------------------------------------------------" << '\n';
     std::cout << "Minimization" << '\n';
+    
     for (int y = 0;y < classes.size();y++) {
-        minimizedStates[y]->transitionA.second = {minimizedStates[pairsCurrentClasses[y].first - 1]};
-        minimizedStates[y]->transitionB.second = { minimizedStates[pairsCurrentClasses[y].second - 1]};
+        minimizedStates[y]->transitionA.second = {minimizedStates[pairsCurrentClasses[classes[y][0] - 1].first - 1]};
+        minimizedStates[y]->transitionB.second = {minimizedStates[pairsCurrentClasses[classes[y][0] - 1].second - 1]};
         minimizedStates[y]->print();
     }
     states =  minimizedStates;
@@ -507,6 +547,7 @@ int main()
     State* ptr3 = &B;
     B.addTransition('a', ptr);
     A.isStart = true;
+    B.isStart = true;
     State* ptr1 = &C;
  
     B.addTransition('a', ptr1);
