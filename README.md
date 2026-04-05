@@ -4,7 +4,7 @@
 
 ---
 
-## **Overview**
+## 📖 **Overview**
 This project implements a conversion from a **Nondeterministic Finite Automaton (NFA)** to a **Deterministic Finite Automaton (DFA)** using C++.
 
 It combines both **theoretical concepts from automata theory** and their **practical implementation using classes and data structures**, providing a clear understanding of how nondeterministic systems can be transformed into deterministic ones.
