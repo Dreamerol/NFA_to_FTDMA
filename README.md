@@ -1,4 +1,4 @@
-# 🔄 NFA to DFA Converter
+# 🔄 Discrete Math - NFA to DFA Converter
 
 This project implements a conversion from a **Nondeterministic Finite Automaton (NFA)** to a **Deterministic Finite Automaton (DFA)** using C++.
 
