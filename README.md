@@ -1,7 +1,7 @@
 # 🔄 Discrete Math - NFA to DFA Converter 
 
 ---
-![MATH](https://github.com/Dreamerol/Dreamerol/blob/2593f1e8f526c7b0ca4eb6ad846bb5fb6ca889b6/RUBIC.jpg)
+![MATH](https://github.com/Dreamerol/Dreamerol/blob/3fcda6de47c889eaa8a1706f9cdf829c823b5a63/DESCRETE%20MATH.jpg)
 ---
 
 ## 📖 **Overview**
