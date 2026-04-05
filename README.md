@@ -1,4 +1,4 @@
-# 🔄 Discrete Math - NFA to DFA Converter
+# 🔄 Discrete Math - NFA to DFA Converter (C++ Implementation)
 
 ---
 
