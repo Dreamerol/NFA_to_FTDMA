@@ -1,4 +1,4 @@
-## 🔄 Discrete Math - NFA to DFA Converter (C++ Implementation)
+## 🔄 Discrete Math - NFA to DFA Converter Discrete Mathematics & Automata Theory | NFA to DFA Converter
 
 ---
 
