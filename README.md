@@ -1,6 +1,6 @@
 # 🔄 Discrete Math - NFA to DFA Converter 
 
----
+
 
 <img src="https://github.com/Dreamerol/Dreamerol/blob/3fcda6de47c889eaa8a1706f9cdf829c823b5a63/MATH4.JPG" alt="MATH" style="width:100%; height:auto;">
 
