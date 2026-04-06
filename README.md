@@ -88,11 +88,12 @@ Prepare a portfolio-ready, recruiter-friendly project
 <h2>🖥️ **Tech Stack / ТЕХНОЛОГИИ**</h2> <p align="center"> <img src="https://img.shields.io/badge/C%2B%2B-17-blue?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++"> <img src="https://img.shields.io/badge/Algorithms-yellow?style=for-the-badge" alt="Algorithms"> <img src="https://img.shields.io/badge/Data-Structures-green?style=for-the-badge" alt="Data Structures"> <img src="https://img.shields.io/badge/Classes-OOP-purple?style=for-the-badge" alt="OOP"> <img src="https://img.shields.io/badge/Console-App-lightgrey?style=for-the-badge" alt="Console App"> <img src="https://img.shields.io/badge/Problem-Solving-blueviolet?style=for-the-badge" alt="Problem Solving"> <img src="https://img.shields.io/badge/Algorithmic-Thinking-orange?style=for-the-badge" alt="Algorithmic Thinking"> </p>
 
 <h2>💼 **Key Skills**</h2>
-🐍 C++ Programming & OOP
-🧩 Algorithm Implementation
-🗂️ Data Structures: sets, maps
-🖥️ Console Application Development
-🧠 Problem-Solving & Logical Thinking
-📊 Structured Program Design & Debugging
 
-💡 This project demonstrates: practical application of C++ and OOP, subset construction algorithm, and NFA → DFA conversion, while being portfolio-ready and optimized for HR & recruiter impact.
+- 🐍 **C++ Programming & OOP**  
+- 🧩 **Algorithm Implementation**  
+- 🗂️ **Data Structures:** sets, maps  
+- 🖥️ **Console Application Development**  
+- 🧠 **Problem-Solving & Logical Thinking**  
+- 📊 **Structured Program Design & Debugging**  
+
+💡 **This project demonstrates:** practical application of C++ and OOP, subset construction algorithm, and NFA → DFA conversion, while being portfolio-ready and optimized for HR & recruiter impact.
