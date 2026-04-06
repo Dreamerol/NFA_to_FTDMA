@@ -54,7 +54,6 @@ Each DFA state represents a set of NFA states.
 
 This eliminates nondeterminism by grouping all possible states into a single deterministic state.
 
-<h2>🔄 **Conversion Workflow**</h2> <div align="center"> <img src="https://github.com/Dreamerol/Dreamerol/blob/main/nfa_to_dfa_flow.png" alt="NFA to DFA Workflow" width="800"/> </div>
 
 Step-by-Step Summary (Emoji Style)
 
@@ -83,7 +82,9 @@ Implement theoretical algorithms in C++
 Gain experience with sets, maps, and structured logic
 Improve problem-solving and algorithmic thinking
 Prepare a portfolio-ready, recruiter-friendly project
+
 <h2>🖥️ **Tech Stack / ТЕХНОЛОГИИ**</h2> <p align="center"> <img src="https://img.shields.io/badge/C%2B%2B-17-blue?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++"> <img src="https://img.shields.io/badge/Algorithms-yellow?style=for-the-badge" alt="Algorithms"> <img src="https://img.shields.io/badge/Data-Structures-green?style=for-the-badge" alt="Data Structures"> <img src="https://img.shields.io/badge/Classes-OOP-purple?style=for-the-badge" alt="OOP"> <img src="https://img.shields.io/badge/Console-App-lightgrey?style=for-the-badge" alt="Console App"> <img src="https://img.shields.io/badge/Problem-Solving-blueviolet?style=for-the-badge" alt="Problem Solving"> <img src="https://img.shields.io/badge/Algorithmic-Thinking-orange?style=for-the-badge" alt="Algorithmic Thinking"> </p>
+
 <h2>💼 **Key Skills**</h2>
 🐍 C++ Programming & OOP
 🧩 Algorithm Implementation
