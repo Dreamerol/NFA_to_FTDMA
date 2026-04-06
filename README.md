@@ -3,7 +3,6 @@
 
 <img src="https://github.com/Dreamerol/Dreamerol/blob/3fcda6de47c889eaa8a1706f9cdf829c823b5a63/MATH4.JPG" alt="MATH" style="width:100%; height:auto;">
 
-
 ---
 
 <p align="center"> <img src="https://img.shields.io/badge/C%2B%2B-17-blue?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++"> <img src="https://img.shields.io/badge/Algorithms-Subset_Construction-yellow?style=for-the-badge" alt="Algorithms"> <img src="https://img.shields.io/badge/Automata-Theory-purple?style=for-the-badge" alt="Automata Theory"> <img src="https://img.shields.io/badge/Data-Structures-green?style=for-the-badge" alt="Data Structures"> <img src="https://img.shields.io/badge/Console-App-lightgrey?style=for-the-badge" alt="Console App"> <img src="https://img.shields.io/badge/Educational-Purpose-red?style=for-the-badge" alt="Educational"> </p>
@@ -46,6 +45,7 @@ There is no ambiguity in transitions
 
 DFAs are easier to simulate and implement.
 
+
 <h2>⚙️ **Algorithm Used**</h2>
 
 The conversion uses the subset construction algorithm, where:
@@ -63,11 +63,13 @@ Step-by-Step Summary (Emoji Style)
 4️⃣ Final States – Mark DFA states as final if containing any NFA final state
 5️⃣ Result – Fully deterministic DFA ready for simulation or analysis
 
+
 <h2>💡 **Key Insight**</h2>
 
 A DFA state is a set of NFA states.
 
 This transformation removes nondeterminism and produces a deterministic automaton.
+
 
 <h2>📌 **Notes**</h2>
 Educational project focused on clarity and correctness
