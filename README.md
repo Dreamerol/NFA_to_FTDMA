@@ -94,6 +94,8 @@ Prepare a portfolio-ready, recruiter-friendly project
 - 🗂️ **Data Structures:** sets, maps  
 - 🖥️ **Console Application Development**  
 - 🧠 **Problem-Solving & Logical Thinking**  
-- 📊 **Structured Program Design & Debugging**  
+- 📊 **Structured Program Design & Debugging**
+
+---
 
 💡 **This project demonstrates:** practical application of C++ and OOP, subset construction algorithm, and NFA → DFA conversion, while being portfolio-ready and optimized for HR & recruiter impact.
