@@ -6,127 +6,92 @@
 
 
 
-## 📖 **Overview**
-This project implements a conversion from a **Nondeterministic Finite Automaton (NFA)** to a **Deterministic Finite Automaton (DFA)** using C++.
-
-It combines both **theoretical concepts from automata theory** and their **practical implementation using classes and data structures**, providing a clear understanding of how nondeterministic systems can be transformed into deterministic ones.
-
 ---
 
-## 🚀 Purpose
+<p align="center"> <img src="https://img.shields.io/badge/C%2B%2B-17-blue?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++"> <img src="https://img.shields.io/badge/Algorithms-Subset_Construction-yellow?style=for-the-badge" alt="Algorithms"> <img src="https://img.shields.io/badge/Automata-Theory-purple?style=for-the-badge" alt="Automata Theory"> <img src="https://img.shields.io/badge/Data-Structures-green?style=for-the-badge" alt="Data Structures"> <img src="https://img.shields.io/badge/Console-App-lightgrey?style=for-the-badge" alt="Console App"> <img src="https://img.shields.io/badge/Educational-Purpose-red?style=for-the-badge" alt="Educational"> </p>
+<h2>📖 **Overview**</h2>
+
+This project implements a conversion from a Nondeterministic Finite Automaton (NFA) to a Deterministic Finite Automaton (DFA) using C++.
+
+It combines theoretical concepts from automata theory with practical implementation, demonstrating how nondeterministic systems can be systematically transformed into deterministic ones using classes, sets, and data structures.
+
+<h2>🚀 **Purpose**</h2>
 
 The main objectives of this project are to:
 
-- Understand the difference between **NFA** and **DFA**  
-- Implement the **subset construction algorithm**  
-- Practice working with **data structures** and structured program design  
-- Apply theoretical computer science concepts in a practical context  
+Understand the difference between NFA and DFA
+Implement the subset construction algorithm
+Practice working with data structures and structured program design
+Apply theoretical computer science concepts in practice
 
-This type of conversion is widely used in:
+Applications include:
 
-- Compilers  
-- Lexical analyzers  
-- Pattern recognition systems  
+🖥️ Compilers
+🔍 Lexical analyzers
+🧩 Pattern recognition systems
+<h2>🧠 **Theory Overview**</h2>
+🔹 Nondeterministic Finite Automaton (NFA)
 
----
+An NFA allows:
 
-## 🧠 Theory Overview
+Multiple transitions for the same input symbol
+Transitions to several states simultaneously
 
-### 🔹 Nondeterministic Finite Automaton (NFA)
+The next state is not uniquely determined.
 
-An NFA is a computational model that allows:
+🔹 Deterministic Finite Automaton (DFA)
 
-- Multiple transitions for the same input symbol  
-- Transitions to several states simultaneously  
+A DFA ensures:
 
-This means the next state is **not uniquely determined**.
+Each state has exactly one transition per input symbol
+There is no ambiguity in transitions
 
----
+DFAs are easier to simulate and implement.
 
-### 🔹 Deterministic Finite Automaton (DFA)
+<h2>⚙️ **Algorithm Used**</h2>
 
-A DFA is a computational model where:
+The conversion uses the subset construction algorithm, where:
 
-- Each state has exactly **one transition per input symbol**  
-- There is **no ambiguity** in state transitions  
+Each DFA state represents a set of NFA states.
 
-This makes DFAs easier to simulate and implement.
+This eliminates nondeterminism by grouping all possible states into a single deterministic state.
 
----
+<h2>🔄 **Conversion Workflow**</h2> <div align="center"> <img src="https://github.com/Dreamerol/Dreamerol/blob/main/nfa_to_dfa_flow.png" alt="NFA to DFA Workflow" width="800"/> </div>
 
-## ⚙️ Algorithm Used
+Step-by-Step Summary (Emoji Style)
 
-The conversion is based on the **subset construction algorithm**, where:
+1️⃣ Initial State – Start with the NFA start state → First DFA state
+2️⃣ State Expansion – For each DFA state, compute all reachable states for every input symbol
+3️⃣ Avoid Duplicates – Reuse existing DFA states to ensure uniqueness
+4️⃣ Final States – Mark DFA states as final if containing any NFA final state
+5️⃣ Result – Fully deterministic DFA ready for simulation or analysis
 
-> Each state in the DFA represents a **set of states from the NFA**.
+<h2>💡 **Key Insight**</h2>
 
-This approach eliminates nondeterminism by grouping all possible states into a single deterministic state.
+A DFA state is a set of NFA states.
 
----
+This transformation removes nondeterminism and produces a deterministic automaton.
 
-## 🔄 Conversion Process (Step-by-Step)
-
-### 1. Initial State
-
-- Start with the **NFA start state**  
-- This becomes the **first DFA state**  
-
----
-
-### 2. State Expansion
-
-For each DFA state:
-
-- Take all NFA states contained in it  
-- For each input symbol:
-  - Find all reachable states from those NFA states  
-- Combine the results into a new set  
-- Add this set as a **new DFA state**  
-
----
-
-### 3. Avoid Duplicates
-
-- If a generated state already exists → **reuse it**  
-- Otherwise → **store it as a new DFA state**  
-
-This ensures the DFA contains only **unique states**.
-
----
-
-### 4. Final States
-
-A DFA state is marked as **final** if:
-
-- It contains **at least one final state from the NFA**  
-
----
-
-## 💡 Key Insight
-
-> The core idea of the algorithm is:
->
-> **A DFA state is a set of NFA states.**
-
-This transformation is what removes nondeterminism and makes the automaton deterministic.
-
----
-
-## 📌 Notes
-
-- This project is intended for **educational purposes**  
-- The focus is on **clarity and correctness**, not optimization  
-- Some advanced features (like ε-transitions) may be simplified or not included  
-
----
-
-## 💡 Learning Outcomes
+<h2>📌 **Notes**</h2>
+Educational project focused on clarity and correctness
+Advanced features like ε-transitions may be simplified
+Emphasis on structured programming and algorithmic thinking
+<h2>💡 **Learning Outcomes**</h2>
 
 By completing this project, you will:
 
-- Understand how NFAs are converted into DFAs  
-- Learn how to implement theoretical algorithms in C++  
-- Gain experience with sets, maps, and structured logic  
-- Improve problem-solving and algorithmic thinking  
+Understand NFA → DFA conversion
+Implement theoretical algorithms in C++
+Gain experience with sets, maps, and structured logic
+Improve problem-solving and algorithmic thinking
+Prepare a portfolio-ready, recruiter-friendly project
+<h2>🖥️ **Tech Stack / ТЕХНОЛОГИИ**</h2> <p align="center"> <img src="https://img.shields.io/badge/C%2B%2B-17-blue?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++"> <img src="https://img.shields.io/badge/Algorithms-yellow?style=for-the-badge" alt="Algorithms"> <img src="https://img.shields.io/badge/Data-Structures-green?style=for-the-badge" alt="Data Structures"> <img src="https://img.shields.io/badge/Classes-OOP-purple?style=for-the-badge" alt="OOP"> <img src="https://img.shields.io/badge/Console-App-lightgrey?style=for-the-badge" alt="Console App"> <img src="https://img.shields.io/badge/Problem-Solving-blueviolet?style=for-the-badge" alt="Problem Solving"> <img src="https://img.shields.io/badge/Algorithmic-Thinking-orange?style=for-the-badge" alt="Algorithmic Thinking"> </p>
+<h2>💼 **Key Skills**</h2>
+🐍 C++ Programming & OOP
+🧩 Algorithm Implementation
+🗂️ Data Structures: sets, maps
+🖥️ Console Application Development
+🧠 Problem-Solving & Logical Thinking
+📊 Structured Program Design & Debugging
 
-
+💡 This project demonstrates: practical application of C++ and OOP, subset construction algorithm, and NFA → DFA conversion, while being portfolio-ready and optimized for HR & recruiter impact.
