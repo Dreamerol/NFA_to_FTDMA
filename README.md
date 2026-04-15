@@ -101,6 +101,16 @@ Prepare a portfolio-ready, recruiter-friendly project
 
 💡 **This project demonstrates:** practical application of C++ and OOP, subset construction algorithm, and NFA → DFA conversion, while being portfolio-ready and optimized for HR & recruiter impact.
 
+
+<p align="center">
+  🔗 Explore more on my GitHub profile: 
+  <a href="https://github.com/Dreamerol">github.com/Dreamerol</a>
+</p>
+
+
+
+
+
 ---
 
 <p align="center"> <img src="https://img.shields.io/badge/C%2B%2B-17-blue?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++"> <img src="https://img.shields.io/badge/Algorithms-Subset_Construction-yellow?style=for-the-badge" alt="Algorithms"> <img src="https://img.shields.io/badge/Automata-Theory-purple?style=for-the-badge" alt="Automata Theory"> <img src="https://img.shields.io/badge/Data-Structures-green?style=for-the-badge" alt="Data Structures"> <img src="https://img.shields.io/badge/Console-App-lightgrey?style=for-the-badge" alt="Console App"> <img src="https://img.shields.io/badge/Educational-Purpose-red?style=for-the-badge" alt="Educational"> </p>
