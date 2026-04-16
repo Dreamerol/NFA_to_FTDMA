@@ -12,17 +12,11 @@
   <img src="https://img.shields.io/badge/Algorithms-Subset%20Construction-FB8500?style=for-the-badge">
   <img src="https://img.shields.io/badge/Automata-Theory-8338EC?style=for-the-badge">
   <img src="https://img.shields.io/badge/Data-Structures-06D6A0?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Console-App-8ECAE6?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Educational-Purpose-FF006E?style=for-the-badge">
-
-  <br><br>
-
-  <!-- Math & Data -->
   <img src="https://img.shields.io/badge/Python-Data%20Science-3A86FF?style=for-the-badge&logo=python&logoColor=white">
   <img src="https://img.shields.io/badge/NumPy-Numerical%20Computing-00B4D8?style=for-the-badge&logo=numpy&logoColor=white">
   <img src="https://img.shields.io/badge/Pandas-Data%20Analysis-52B788?style=for-the-badge&logo=pandas&logoColor=white">
   <img src="https://img.shields.io/badge/SQL-Database%20Query-4361EE?style=for-the-badge&logo=postgresql&logoColor=white">
-  <img src="https://img.shields.io/badge/Machine%20Learning-AI%20Models-F72585?style=for-the-badge&logo=tensorflow&logoColor=white">
+
 
 </div>
 
