@@ -13,14 +13,9 @@
   <img src="https://img.shields.io/badge/Automata-Theory-6D28D9?style=for-the-badge">
   <img src="https://img.shields.io/badge/Data-Structures-15803D?style=for-the-badge">
   <img src="https://img.shields.io/badge/Console-App-374151?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Educational-Purpose-B91C1C?style=for-the-badge">
-  
- <img src="https://img.shields.io/badge/Python-Data%20Science-1E3A8A?style=for-the-badge&logo=python&logoColor=white">
-  <img src="https://img.shields.io/badge/NumPy-Numerical%20Computing-0EA5E9?style=for-the-badge&logo=numpy&logoColor=white">
-  <img src="https://img.shields.io/badge/Pandas-Data%20Analysis-334155?style=for-the-badge&logo=pandas&logoColor=white">
-  <img src="https://img.shields.io/badge/SQL-Database%20Query-0F172A?style=for-the-badge&logo=postgresql&logoColor=white">
-  <img src="https://img.shields.io/badge/Machine%20Learning-AI%20Models-111827?style=for-the-badge&logo=tensorflow&logoColor=white">
-
+  <img src="https://img.shields.io/badge/Educational-Purpose-B91C1C?style=for-the-badge">  
+  <img src="https://img.shields.io/badge/Python-Data%20Science-1E3A8A?style=for-the-badge&logo=python&logoColor=white">
+ 
 </div>
 
 
