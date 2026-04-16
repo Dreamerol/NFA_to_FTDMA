@@ -5,7 +5,24 @@
 
 ---
 
-<p align="center"> <img src="https://img.shields.io/badge/C%2B%2B-17-blue?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++"> <img src="https://img.shields.io/badge/Algorithms-Subset_Construction-yellow?style=for-the-badge" alt="Algorithms"> <img src="https://img.shields.io/badge/Automata-Theory-purple?style=for-the-badge" alt="Automata Theory"> <img src="https://img.shields.io/badge/Data-Structures-green?style=for-the-badge" alt="Data Structures"> <img src="https://img.shields.io/badge/Console-App-lightgrey?style=for-the-badge" alt="Console App"> <img src="https://img.shields.io/badge/Educational-Purpose-red?style=for-the-badge" alt="Educational"> </p>
+<div align="center">
+
+  <img src="https://img.shields.io/badge/C%2B%2B-17-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white">
+
+  <img src="https://img.shields.io/badge/Algorithms-Subset%20Construction-F59E0B?style=for-the-badge">
+
+  <img src="https://img.shields.io/badge/Automata-Theory-7C3AED?style=for-the-badge">
+
+  <img src="https://img.shields.io/badge/Data-Structures-22C55E?style=for-the-badge">
+
+  <img src="https://img.shields.io/badge/Console-App-64748B?style=for-the-badge">
+
+  <img src="https://img.shields.io/badge/Educational-Purpose-DC2626?style=for-the-badge">
+
+</div>
+
+
+
 <h2>📖 **Overview**</h2>
 
 This project implements a conversion from a Nondeterministic Finite Automaton (NFA) to a Deterministic Finite Automaton (DFA) using C++.
