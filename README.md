@@ -7,20 +7,21 @@
 
 <div align="center">
 
-  <img src="https://img.shields.io/badge/C%2B%2B-17-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white">
-
-  <img src="https://img.shields.io/badge/Algorithms-Subset%20Construction-F59E0B?style=for-the-badge">
-
-  <img src="https://img.shields.io/badge/Automata-Theory-7C3AED?style=for-the-badge">
-
-  <img src="https://img.shields.io/badge/Data-Structures-22C55E?style=for-the-badge">
-
-  <img src="https://img.shields.io/badge/Console-App-64748B?style=for-the-badge">
-
-  <img src="https://img.shields.io/badge/Educational-Purpose-DC2626?style=for-the-badge">
+  <!-- Core -->
+  <img src="https://img.shields.io/badge/C%2B%2B-17-004482?style=for-the-badge&logo=c%2B%2B&logoColor=white">
+  <img src="https://img.shields.io/badge/Algorithms-Subset%20Construction-1F2937?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Automata-Theory-6D28D9?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Data-Structures-15803D?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Console-App-374151?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Educational-Purpose-B91C1C?style=for-the-badge">
+  
+ <img src="https://img.shields.io/badge/Python-Data%20Science-1E3A8A?style=for-the-badge&logo=python&logoColor=white">
+  <img src="https://img.shields.io/badge/NumPy-Numerical%20Computing-0EA5E9?style=for-the-badge&logo=numpy&logoColor=white">
+  <img src="https://img.shields.io/badge/Pandas-Data%20Analysis-334155?style=for-the-badge&logo=pandas&logoColor=white">
+  <img src="https://img.shields.io/badge/SQL-Database%20Query-0F172A?style=for-the-badge&logo=postgresql&logoColor=white">
+  <img src="https://img.shields.io/badge/Machine%20Learning-AI%20Models-111827?style=for-the-badge&logo=tensorflow&logoColor=white">
 
 </div>
-
 
 
 <h2>📖 **Overview**</h2>
