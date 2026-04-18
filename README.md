@@ -63,6 +63,9 @@ Applications include:
 🖥️ Compilers
 🔍 Lexical analyzers
 🧩 Pattern recognition systems
+
+---
+
 <h2>🧠 **Theory Overview**</h2>
 🔹 Nondeterministic Finite Automaton (NFA)
 
@@ -82,6 +85,24 @@ There is no ambiguity in transitions
 
 DFAs are easier to simulate and implement.
 
+---
+
+<div align="center">
+
+  <!-- Core -->
+  <img src="https://img.shields.io/badge/C%2B%2B-17-00A6FB?style=for-the-badge&logo=c%2B%2B&logoColor=white">
+  <img src="https://img.shields.io/badge/Algorithms-Subset%20Construction-FB8500?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Automata-Theory-8338EC?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Data-Structures-06D6A0?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Python-Data%20Science-3A86FF?style=for-the-badge&logo=python&logoColor=white">
+  <img src="https://img.shields.io/badge/NumPy-Numerical%20Computing-00B4D8?style=for-the-badge&logo=numpy&logoColor=white">
+  <img src="https://img.shields.io/badge/Pandas-Data%20Analysis-52B788?style=for-the-badge&logo=pandas&logoColor=white">
+  <img src="https://img.shields.io/badge/SQL-Database%20Query-4361EE?style=for-the-badge&logo=postgresql&logoColor=white">
+
+
+</div>
+
+---
 
 <h2>⚙️ **Algorithm Used**</h2>
 
@@ -126,11 +147,15 @@ A DFA state is a set of NFA states.
 
 This transformation removes nondeterminism and produces a deterministic automaton.
 
+---
 
 <h2>📌 **Notes**</h2>
 Educational project focused on clarity and correctness
 Advanced features like ε-transitions may be simplified
 Emphasis on structured programming and algorithmic thinking
+
+---
+
 <h2>💡 **Learning Outcomes**</h2>
 
 By completing this project, you will:
