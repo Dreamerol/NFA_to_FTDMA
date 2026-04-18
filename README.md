@@ -172,6 +172,10 @@ Prepare a portfolio-ready, recruiter-friendly project
 
 <h2>🖥️ **Tech Stack**</h2> 
 
+
+</div>
+
+
 <div align="center">
 
   <!-- Core -->
