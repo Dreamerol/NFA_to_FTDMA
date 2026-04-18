@@ -27,22 +27,6 @@ This project implements a conversion from a Nondeterministic Finite Automaton (N
 
 It combines theoretical concepts from automata theory with practical implementation, demonstrating how nondeterministic systems can be systematically transformed into deterministic ones using classes, sets, and data structures.
 
----
-
-<div align="center">
-
-  <!-- Core -->
-  <img src="https://img.shields.io/badge/C%2B%2B-17-00A6FB?style=for-the-badge&logo=c%2B%2B&logoColor=white">
-  <img src="https://img.shields.io/badge/Algorithms-Subset%20Construction-FB8500?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Automata-Theory-8338EC?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Data-Structures-06D6A0?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Python-Data%20Science-3A86FF?style=for-the-badge&logo=python&logoColor=white">
-  <img src="https://img.shields.io/badge/NumPy-Numerical%20Computing-00B4D8?style=for-the-badge&logo=numpy&logoColor=white">
-  <img src="https://img.shields.io/badge/Pandas-Data%20Analysis-52B788?style=for-the-badge&logo=pandas&logoColor=white">
-  <img src="https://img.shields.io/badge/SQL-Database%20Query-4361EE?style=for-the-badge&logo=postgresql&logoColor=white">
-
-
-</div>
 
 ---
 
@@ -157,7 +141,26 @@ Gain experience with sets, maps, and structured logic
 Improve problem-solving and algorithmic thinking
 Prepare a portfolio-ready, recruiter-friendly project
 
-<h2>🖥️ **Tech Stack / ТЕХНОЛОГИИ**</h2> <p align="center"> <img src="https://img.shields.io/badge/C%2B%2B-17-blue?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++"> <img src="https://img.shields.io/badge/Algorithms-yellow?style=for-the-badge" alt="Algorithms"> <img src="https://img.shields.io/badge/Data-Structures-green?style=for-the-badge" alt="Data Structures"> <img src="https://img.shields.io/badge/Classes-OOP-purple?style=for-the-badge" alt="OOP"> <img src="https://img.shields.io/badge/Console-App-lightgrey?style=for-the-badge" alt="Console App"> <img src="https://img.shields.io/badge/Problem-Solving-blueviolet?style=for-the-badge" alt="Problem Solving"> <img src="https://img.shields.io/badge/Algorithmic-Thinking-orange?style=for-the-badge" alt="Algorithmic Thinking"> </p>
+---
+
+<h2>🖥️ **Tech Stack / ТЕХНОЛОГИИ**</h2> 
+
+<div align="center">
+
+  <!-- Core -->
+  <img src="https://img.shields.io/badge/C%2B%2B-17-00A6FB?style=for-the-badge&logo=c%2B%2B&logoColor=white">
+  <img src="https://img.shields.io/badge/Algorithms-Subset%20Construction-FB8500?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Automata-Theory-8338EC?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Data-Structures-06D6A0?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Python-Data%20Science-3A86FF?style=for-the-badge&logo=python&logoColor=white">
+  <img src="https://img.shields.io/badge/NumPy-Numerical%20Computing-00B4D8?style=for-the-badge&logo=numpy&logoColor=white">
+  <img src="https://img.shields.io/badge/Pandas-Data%20Analysis-52B788?style=for-the-badge&logo=pandas&logoColor=white">
+  <img src="https://img.shields.io/badge/SQL-Database%20Query-4361EE?style=for-the-badge&logo=postgresql&logoColor=white">
+
+
+</div>
+
+---
 
 <h2>💼 **Key Skills**</h2>
 
@@ -195,20 +198,3 @@ Prepare a portfolio-ready, recruiter-friendly project
   <a href="https://github.com/Dreamerol">github.com/Dreamerol</a>
 </p>
 
-
----
-
-<div align="center">
-
-  <!-- Core -->
-  <img src="https://img.shields.io/badge/C%2B%2B-17-00A6FB?style=for-the-badge&logo=c%2B%2B&logoColor=white">
-  <img src="https://img.shields.io/badge/Algorithms-Subset%20Construction-FB8500?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Automata-Theory-8338EC?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Data-Structures-06D6A0?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Python-Data%20Science-3A86FF?style=for-the-badge&logo=python&logoColor=white">
-  <img src="https://img.shields.io/badge/NumPy-Numerical%20Computing-00B4D8?style=for-the-badge&logo=numpy&logoColor=white">
-  <img src="https://img.shields.io/badge/Pandas-Data%20Analysis-52B788?style=for-the-badge&logo=pandas&logoColor=white">
-  <img src="https://img.shields.io/badge/SQL-Database%20Query-4361EE?style=for-the-badge&logo=postgresql&logoColor=white">
-
-
-</div>
