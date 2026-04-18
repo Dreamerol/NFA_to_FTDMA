@@ -41,6 +41,14 @@ Apply theoretical computer science concepts in practice
 
 ---
 
+Applications include:
+
+🖥️ Compilers
+🔍 Lexical analyzers
+🧩 Pattern recognition systems
+
+---
+
 <div align="center">
 
   <!-- Core -->
@@ -56,13 +64,6 @@ Apply theoretical computer science concepts in practice
 
 </div>
 
----
-
-Applications include:
-
-🖥️ Compilers
-🔍 Lexical analyzers
-🧩 Pattern recognition systems
 
 ---
 
@@ -170,7 +171,7 @@ Prepare a portfolio-ready, recruiter-friendly project
 
 <div align="center">
 
-<h2>🖥️ **Tech Stack**</h2> 
+<h2>🖥️ Tech Stack</h2> 
 
 
 </div>
