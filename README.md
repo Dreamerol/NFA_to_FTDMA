@@ -168,7 +168,9 @@ Prepare a portfolio-ready, recruiter-friendly project
 
 ---
 
-<h2>🖥️ **Tech Stack / ТЕХНОЛОГИИ**</h2> 
+<div align="center">
+
+<h2>🖥️ **Tech Stack**</h2> 
 
 <div align="center">
 
