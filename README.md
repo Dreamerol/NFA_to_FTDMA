@@ -1,4 +1,4 @@
-<h1 align="center">🔄 NFA → DFA CONVERTER – C++</h1> <h2 align="center"><strong><em style="font-size: 160%;">Educational project converting a Nondeterministic Finite Automaton into a Deterministic Finite Automaton using C++</em></strong></h2>
+<h1 align="center">🔄 𝗡𝗙𝗔 → 𝗗𝗙𝗔 𝗖𝗢𝗡𝗩𝗘𝗥𝗧𝗘𝗥 – 𝗖++</h1> <h2 align="center"><strong><em style="font-size: 160%;">Educational project converting a Nondeterministic Finite Automaton into a Deterministic Finite Automaton using C++</em></strong></h2>
 
 ---
 
